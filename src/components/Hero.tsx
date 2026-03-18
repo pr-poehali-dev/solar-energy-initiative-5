@@ -56,11 +56,11 @@ export default function Hero() {
 
         <div className="relative z-10 flex flex-col items-center gap-4 sm:gap-6 text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-normal leading-[90%] tracking-[-0.03em] text-black mix-blend-exclusion max-w-2xl">
-            Ускорьте ваш маркетинг
+            Платформа для онлайн-обучения
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl leading-[160%] text-black max-w-2xl px-4">
-            Дайте вашей команде свободу творить, а не настраивать. Создавайте, запускайте и масштабируйте цифровые продукты с уверенностью и скоростью.
+            Удобный сервис для студентов и преподавателей: сдавайте задания, отслеживайте прогресс и общайтесь с группой — всё в одном месте.
           </p>
 
           <AnimatePresence initial={false}>
@@ -83,7 +83,7 @@ export default function Hero() {
                   onClick={handleExpand}
                   className="h-15 px-6 sm:px-8 py-3 text-lg sm:text-xl font-regular text-[#E3E3E3] tracking-[-0.01em] relative"
                 >
-                  Запросить демо
+                  Записаться на курс
                 </motion.button>
               </motion.div>
             )}
@@ -133,7 +133,7 @@ export default function Hero() {
               >
                 <div className="flex-1 flex flex-col justify-center space-y-3 w-full">
                   <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-white leading-none tracking-[-0.03em]">
-                    Связаться с нами
+                    Записаться на курс
                   </h2>
 
                   <div className="space-y-4 sm:space-y-6 pt-4">
@@ -150,7 +150,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Узнайте, как FlowPulse может трансформировать ваш бизнес с индивидуальными решениями и гибкими тарифами.
+                          Доступ к материалам курса, лекциям и заданиям — в любое удобное время, с любого устройства.
                         </p>
                       </div>
                     </div>
@@ -172,7 +172,7 @@ export default function Hero() {
                       </div>
                       <div>
                         <p className="text-sm sm:text-base text-white leading-[150%]">
-                          Убедитесь лично, как платформа FlowPulse ускоряет разработку и приносит результаты.
+                          Мгновенная обратная связь от преподавателя и автоматическая проверка домашних заданий.
                         </p>
                       </div>
                     </div>
@@ -180,17 +180,17 @@ export default function Hero() {
 
                   <div className="pt-6 sm:pt-8 mt-6 sm:mt-8 border-t border-white/20">
                     <p className="text-lg sm:text-xl lg:text-2xl text-white leading-[150%] mb-4">
-                      FlowPulse позволяет нашей команде работать быстрее и выпускать продукты с уверенностью.
+                      Платформа реально помогает учиться — всё под рукой, ничего лишнего. Сдал задание — получил оценку сразу.
                     </p>
                     <div className="flex items-center gap-3 sm:gap-4">
                       <img
                         src="https://cdn.poehali.dev/templates/fluid-cta-ru/anna-avatar.jpg"
-                        alt="Анна Смирнова"
+                        alt="Максим Орлов"
                         className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
                       />
                       <div>
-                        <p className="text-base sm:text-lg lg:text-xl text-white">Анна Смирнова</p>
-                        <p className="text-sm sm:text-base text-white/70">Директор по маркетингу, TechVision</p>
+                        <p className="text-base sm:text-lg lg:text-xl text-white">Максим Орлов</p>
+                        <p className="text-sm sm:text-base text-white/70">Студент 3 курса, факультет ИТ</p>
                       </div>
                     </div>
                   </div>
@@ -204,7 +204,7 @@ export default function Hero() {
                         htmlFor="name"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        ПОЛНОЕ ИМЯ *
+                        ФИО СТУДЕНТА *
                       </label>
                       <input
                         type="text"
@@ -220,7 +220,7 @@ export default function Hero() {
                         htmlFor="email"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        РАБОЧИЙ EMAIL *
+                        УЧЕБНЫЙ EMAIL *
                       </label>
                       <input
                         type="email"
@@ -236,10 +236,10 @@ export default function Hero() {
                           htmlFor="website"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          САЙТ КОМПАНИИ
+                          ГРУППА / ПОТОК
                         </label>
                         <input
-                          type="url"
+                          type="text"
                           id="website"
                           name="website"
                           className="w-full px-4 py-2.5 rounded-lg bg-[#001F63] border-0 text-white placeholder:text-white/50 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-sm h-10"
@@ -250,7 +250,7 @@ export default function Hero() {
                           htmlFor="company-size"
                           className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                         >
-                          РАЗМЕР
+                          КУРС
                         </label>
                         <select
                           id="company-size"
@@ -263,11 +263,11 @@ export default function Hero() {
                             backgroundSize: "1rem",
                           }}
                         >
-                          <option value="1-10">1-10</option>
-                          <option value="11-50">11-50</option>
-                          <option value="51-200">51-200</option>
-                          <option value="201-500">201-500</option>
-                          <option value="501+">501+</option>
+                          <option value="1">1 курс</option>
+                          <option value="2">2 курс</option>
+                          <option value="3">3 курс</option>
+                          <option value="4">4 курс</option>
+                          <option value="5">5 курс</option>
                         </select>
                       </div>
                     </div>
@@ -278,7 +278,7 @@ export default function Hero() {
                         htmlFor="message"
                         className="block text-[10px] font-mono font-normal text-white mb-2 tracking-[0.5px] uppercase"
                       >
-                        КОММЕНТАРИЙ
+                        ВОПРОС ПРЕПОДАВАТЕЛЮ
                       </label>
                       <textarea
                         id="message"
@@ -293,7 +293,7 @@ export default function Hero() {
                       type="submit"
                       className="w-full px-8 py-2.5 rounded-full bg-white text-[#0041C1] font-medium hover:bg-white/90 transition-colors tracking-[-0.03em] h-10"
                     >
-                      Отправить
+                      Записаться
                     </button>
                   </form>
                 </div>
